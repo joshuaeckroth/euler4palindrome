@@ -7,10 +7,10 @@ string to_string(int);
 int main(){
 	int max = 0;
 	for(int i = 999; i > 100; i--){
-		for(int j = 999; j > 100; j--){
+		for(int j = 999; j >= i; j--){
 			string s = to_string(i * j);
 			if(is_palindrome(s)){
-				//cout << "found: " << i * j << endl;
+				// cout << "found: " << i * j << endl;
 				if(max < i * j)
 					max = i * j;
 			}
